@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+    cursor: pointer;
+}
+
+.imgs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imgs .alley {
+    margin-left: 6rem;
+}
+
+.active {
+    transform: scale(1.5);
+    transition: ease 0.8s;
+}

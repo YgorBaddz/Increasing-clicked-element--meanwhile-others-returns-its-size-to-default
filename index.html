@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="imgs">
+        <img src="./alley.jpg" alt="" class="alley">;
+        <img src="./nightCity.gif" alt="" class="nightC active">;
+        <img src="./siyaniye.jpg" alt="" class="siyaniye">;
+    </div>
+
+    <script>
+        let cards = document.querySelectorAll('img');
+        intoArr = Array.from(cards);
+        for(let remover of intoArr) {
+            remover.addEventListener('click', () => {
+                removeActive();
+
+                remover.classList.add('active');
+            })
+        }
+
+        function removeActive() {
+            intoArr.forEach(remover => {
+                remover.classList.remove('active');
+            })
+        }
+    </script>
+</body>
+</html>
+
